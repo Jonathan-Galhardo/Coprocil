@@ -36,9 +36,8 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  color: var(--color-white);
+  color: var(--color-bg);
   line-height: 1.7;
-  background-image: url(../src/assets/bg-texture.png);
 }
 
 /* ######### Estilo Geral ################*/ 
@@ -48,13 +47,60 @@ container {
   margin: auto;
 }
 
-.logo{
-  width: 300px;
-  height: auto;
-}
-
 #navbarSupportedContent{
   color:var(--color-bg);
   margin-left:5rem;
 }
 
+#menu{
+  position: fixed;
+}
+ 
+.logo{
+  width: 250px;
+}
+
+header video {
+  margin-top:10rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: 100%;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+
+
+
+
+/*###################### Media Queries (Tablets) #####################*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: var(--container-width-md);
+  }
+  }
+
+
+/*###################### Media Queries (Mobile) #####################*/
+@media screen and (max-width: 600px) {
+  .container {
+    width: var(--container-width-sm);
+  }
+  header video {
+    width:50px;
+    margin-top:-11rem;
+ }
+
+  .logo{
+    width: 200px;
+  }
+ 
+ 
+}
