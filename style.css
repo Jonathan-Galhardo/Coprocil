@@ -21,6 +21,7 @@
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: all 400ms ease;
 
+  --container-width-el: 65%;  
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
@@ -47,6 +48,7 @@ body {
 #navbarSupportedContent{
   color:var(--color-bg);
   margin-left:5rem;
+  padding: 10px;
 }
 
 #menu{
@@ -58,51 +60,41 @@ body {
   width: 250px;
 }
 
-header video {
-  margin-top: -12rem;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  min-width: 100%;
-  min-height: 100%;
+.img_capa{
   width: 100%;
-  height: auto;
-  z-index: 0;
-  -ms-transform: translateX(-50%) translateY(-50%);
-  -moz-transform: translateX(-50%) translateY(-50%);
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
+  height: 100%;
+}
+
+
+
+
+/*###################### Media Queries (desktop) #####################*/
+@media screen and (min-width: 1025px) {
+ 
+
 }
 
 /*###################### Media Queries (Tablets) #####################*/
 @media screen and (max-width: 1024px) {
-  .container {
-    width: var(--container-width-md);
+  .img_capa{
+    width: 100%;
   }
-  header video{
-    margin-top: -17rem;
+  nav {
+    padding: 1rem;
   }
+  
 }
 
 /*###################### Media Queries (Mobile) #####################*/
 @media screen and (max-width: 600px) {
-  .container {
-    width: var(--container-width-sm);
+  .img_capa{
+    margin-top: 5rem;
+    
   }
   
-  header video{
-    margin-top: -12rem;
-  }
+}
 
-  .logo{
-    width: 8rem;
-    padding: 15px;
-  }
-
-  #menu{
-    height: 5rem;
   
-  }
 
   
 }
