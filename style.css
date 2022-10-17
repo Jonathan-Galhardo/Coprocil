@@ -2,7 +2,7 @@
 
 /* reset da página*/
 *{
-  margin: 0.2rem;
+  margin: 0;
   padding: 0;
   border: 0;
   outline: 0;
@@ -20,9 +20,11 @@
   --color-white: #fff;
   --color-light: rgba(255, 255, 255, 0.6);
   --transition: all 400ms ease;
+
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+
 }
 
 html {
@@ -42,11 +44,6 @@ body {
 
 /* ######### Estilo Geral ################*/ 
 
-container {
-  width: auto;
-  margin: auto;
-}
-
 #navbarSupportedContent{
   color:var(--color-bg);
   margin-left:5rem;
@@ -54,6 +51,7 @@ container {
 
 #menu{
   position: fixed;
+
 }
  
 .logo{
@@ -61,7 +59,7 @@ container {
 }
 
 header video {
-  margin-top:10rem;
+  margin-top: -12rem;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -76,31 +74,35 @@ header video {
   transform: translateX(-50%) translateY(-50%);
 }
 
-
-
-
-
 /*###################### Media Queries (Tablets) #####################*/
 @media screen and (max-width: 1024px) {
   .container {
     width: var(--container-width-md);
   }
+  header video{
+    margin-top: -17rem;
   }
-
+}
 
 /*###################### Media Queries (Mobile) #####################*/
 @media screen and (max-width: 600px) {
   .container {
     width: var(--container-width-sm);
   }
-  header video {
-    width:50px;
-    margin-top:-11rem;
- }
+  
+  header video{
+    margin-top: -12rem;
+  }
 
   .logo{
-    width: 200px;
+    width: 8rem;
+    padding: 15px;
   }
- 
- 
+
+  #menu{
+    height: 5rem;
+  
+  }
+
+  
 }
